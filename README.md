@@ -1,2 +1,3 @@
 # Actividades-con-su-explicacion
-explicaciones y como se usa cada cosa en js
+Hola que tal creadores del codigo hoy les vengo a mandar poco a poco ciertos cambios y claro explicaciones que deje a medio este repositorio
+saludos.
