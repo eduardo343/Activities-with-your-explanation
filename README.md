@@ -1,3 +1,3 @@
 # Activities-with-your-explanation
-Hola que tal creadores del codigo hoy les vengo a mandar poco a poco ciertos cambios y claro explicaciones que deje a medio este repositorio
-saludos.
+Hello, code creators, today I come to send you little by little some changes and explanations that I left in the middle of this repository.
+greetings.
