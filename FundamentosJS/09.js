@@ -1,45 +1,39 @@
-//operaciones en los arreglos
+// Operations on Arrays
 
-const tecnologias = ['Html', 'React', 'JavaScript', 'Node.js']
+const tecnologias = ['Html', 'React', 'JavaScript', 'Node.js'];
 
-//añadir elementos al array
-//tecnologias.push('Hola que hace')// añade al final del array //este no se recomienda para react
-//tecnologias.unshift('prueba')// añade al principio del array //este tampoco no se recomiendan para react
+// Adding elements to the array
+// tecnologias.push('Hola que hace'); // Adds to the end of the array; this is not recommended for React.
+// tecnologias.unshift('prueba'); // Adds to the beginning of the array; this is also not recommended for React.
 
+// Using the spread operator to create a new array is recommended in React:
+// const nuevoArreglo = [...tecnologias, 'hola']; // This will create a new array with 'hola' added at the end.
+// This results in two tables being displayed, with 'hola' added in the lower table.
+// const nuevoArreglo = ['hola', ...tecnologias]; // This also works; it adds 'hola' at the beginning.
 
-//const nuevoArreglo = [...tecnologias, 'hola'] //estos si es recomendable usar para react // al usar esto notaras que solo te saldran dos tablas
-// y en las tabla de abaj se agrega hola
-//const nuevoArreglo = ['hola', ...tecnologias]//este tambien //este arreglo y el de arriba son lo mismo
+// Removing elements from the array
+// tecnologias.pop(); // Removes the last element; not recommended in React.
+// tecnologias.shift(); // Removes the first element; also not recommended.
+// tecnologias.splice(1, 1); // Removes an element at a specific position; not recommended.
 
-//Eliminar elementos del array
-//tecnologias.pop()// elimina solo el final //estos no se deben usar en react 
-//tecnologias.shift()// elimina el inicio //este tampoco
-//tecnologias.splice(1, 1)// elimina en una posicion especifica //este tampoco
+// Filtering the array
+// const nuevoArray = tecnologias.filter(function (tech) {
+//     return tech !== 'Html'; // This will return all items except 'Html'.
+//     // To check for equality and retrieve a specific item, use ===.
+// });
 
+// Replacing an element in the array
+// tecnologias[0] = 'hola'; // Directly replacing an element this way is not recommended.
 
-//const nuevoArray = tecnologias.filter( function (tech){
-    //return tech !== 'Html' // !=== desigualdad //para solo traerte un item usa esto ===
-//})  
+// Mapping over the array to create a new one
+const nuevoArray = tecnologias.map(function (tech) { // .map is an iterator.
+    if (tech === 'Html') {
+        return 'probando'; // Replace 'Html' with 'probando'.
+    } else {
+        return tech; // Return the original value for all other elements.
+    } // This is the correct way to replace an element.
+});
 
-
-//Reemplazar del array
-//tecnologias[0] = 'hola' //reemplazar de esta forma no
-
-
-
-//const nuevoArray = tecnologias.map( function (tech){
-   //console.log(tech)
-//})
-
-const nuevoArray = tecnologias.map(function (tech){//.map es un iterador
-    if(tech === 'Html'){
-        return 'probando'
-    } else{
-        return tech
-    } //esta si es la buena
-})
-
-//reemplazar del array
-console.table(tecnologias)
-//console.table(nuevoArreglo)
-console.table(nuevoArray)
+// Display the original and new arrays
+console.table(tecnologias); // Shows the original array.
+console.table(nuevoArray); // Shows the new array with 'Html' replaced.
