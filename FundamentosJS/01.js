@@ -1,14 +1,14 @@
-//variables  -let 
+//variables -let 
 
-let cliente = "juan";
-let precioDescuento = 220; //camel case se le llama cuando lleva mas de dos palabras
-// re asignar
-cliente = 3+6;
-//pueden iniciar sin un valor 
-let precio = 1000
+let customer = “juan”;
+let priceDiscount = 220; //camel case is called when it has more than two words in it
+//re assign
+customer = 3+6;
+//can start without a value 
+let price = 1000
 
-console.log(cliente);
-console.log(precio);
-console.log(precioDescuento);
+console.log(customer);
+console.log(price);
+console.log(priceDiscount);
 
-// let en let si se pueden reasignar ciertos valores.
+// let in let if certain values can be reassigned.
