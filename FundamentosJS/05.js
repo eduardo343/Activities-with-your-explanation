@@ -1,22 +1,23 @@
-//Objetos -Manipulacion
+// Objects - Manipulation
 
-const producto = { //aunque sea const se puede modificar las propiedades
+const producto = { // even though it's const, you can modify the properties
     nombre: "Tablet",
     precio: 300, 
-    disponible: true /// a las llaves en ingles se les dice curl braces
- }
- //no modificar objetos
+    disponible: true // curly braces in English
+};
 
- //Object.freeze(producto) - freez- No deja modificarlo
- //segunda opcion para que no se puedan modificar los objetos
- ///Object.seal(producto) // Modificar propiedades existentes, no deja añadir ni eliminar
+// Do not modify objects
 
- //rescribir un valor
- producto.nombre = "Monitor Curvo Gamer"
-//si no existe, lo va añadir
- producto.image = "imagen.jpg"
+// Object.freeze(producto); // freeze - prevents modifications
+// Second option to prevent object modifications
+// Object.seal(producto); // allows modification of existing properties, but does not allow adding or deleting
 
-//eliminar propiedad 
-delete producto.nombre
+// Rewrite a value
+producto.nombre = "Monitor Curvo Gamer"; 
+// If it doesn't exist, it will add it
+producto.image = "imagen.jpg"; 
 
- console.table(producto)
+// Delete property 
+delete producto.nombre; 
+
+console.table(producto);
