@@ -1,17 +1,18 @@
-//iteradores de arreglos en js
-const tecnologias = ['Html', 'React', 'JavaScript', 'Node.js']
+// Iterators for Arrays in JS
+const tecnologias = ['Html', 'React', 'JavaScript', 'Node.js'];
 
-//forEach
-//forEach - Accder a cada elemento del array
- const  arrayForeach =tecnologias.forEach(function (tech) {
-    //console.log(tech) //no importa como lo llames tech o x siempre funcionara para la separacion
-    return tech
-})
+// forEach
+// forEach - Accesses each element of the array
+const arrayForeach = tecnologias.forEach(function (tech) {
+    // console.log(tech); // It doesn't matter what you name it (tech or x); it will work for accessing each element.
+    return tech; // Note: forEach does not return a new array.
+});
 
-const arrayMap = tecnologias.map( function (tech){
-    //console.log(tech)
-    return tech
-})
+// map
+const arrayMap = tecnologias.map(function (tech) {
+    // console.log(tech); // Logging each element (optional).
+    return tech; // Returns each element to create a new array.
+});
 
-console.log(arrayForeach)
-console.log(arrayMap)
+console.log(arrayForeach); // This will log 'undefined' because forEach doesn't return anything useful.
+console.log(arrayMap); // This will log the new array: ['Html', 'React', 'JavaScript', 'Node.js'].
