@@ -1,16 +1,17 @@
-//Variables - const
-let cliente = "juan";
-let precioDescuento = 220;
+// Variables - const
+let customer = "juan";
+let priceDiscount = 220;
 
-// -const no se puede reasignar 
-//cliente = 20
-//  no pueden iniciar sin valor
-//const precio
+// - const cannot be reassigned 
+// - const no puede ser reasignado
+// customer = 20
+// cannot be declared without an initial value
+// no puede ser declarado sin un valor inicial
+// const price
 
+console.log(price);
+console.log(customer);
+console.log(priceDiscount);
 
-
-console.log(precio)
-console.log(cliente)
-console.log(precioDescuento)
-
-//en const no se pueden ni modificar los valores a diferencia de let
+// with const, you cannot modify the values, unlike let
+// con const, no puedes modificar los valores, a diferencia de let
